@@ -1,0 +1,169 @@
+.btn-light{
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.btn-light:hover{
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-delete{
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #996515;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-edit{
+  padding: 8px 18px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #222;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.btn-delete:hover{
+  background: rgba(255,255,255,0.2);
+  border: 1px solid #996515;
+  color: #996515;
+  transition: 0.3s;
+}
+
+.btn-edit:hover{
+  background: rgba(255,255,255,0.2);
+  color: #222;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.btn-save i{
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #996515;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-save:hover i{
+  background: rgba(255,255,255,0.2);
+  border: 1px solid #996515;
+  color: #996515;
+  transition: 0.3s;
+}
+
+label{
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem;
+  margin: auto;
+  max-width: 600px;
+}
+
+form input, form textarea, form select{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  border-color: var(--light-bg);
+  background: var(--light-bg);
+  color: var(--white);
+  text-transform: none;
+}
+
+form textarea{
+  resize: none;
+}
+
+form .heading-edit{    
+  display: flex;
+  justify-content: space-between; 
+  margin: 2rem 0;
+}
+
+.heading-edit span{
+  font-size: 3rem;
+  color: var(--red);
+  background: var(--black);
+}
+
+.linkBox{
+  display: grid;
+}
+
+.radioBox{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+}
+
+.radioButton{
+  display: none;
+}
+
+.radioLabel{
+  position: relative;
+  color: #996515;
+  font-size: 1.5rem;
+  border: 2px solid #996515;
+  border-radius: 5px;
+  padding: 5px 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radioLabel::before{
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 2px solid #996515;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.radioButton:checked + .radioLabel{
+  background-color: #996515;
+  color: white;
+}
+
+.radioButton:checked + .radioLabel::before{
+  height: 8px;
+  width: 8px;
+  border: 5px solid white;
+  background-color: #996515;
+}
+
+.order_input{
+  text-align: left;
+  padding-left: 1rem;
+  width: 50px;
+}
+
+@media screen and (max-width:320px){
+	.radioLabel{
+    font-size: 1.2rem;
+  }
+}
